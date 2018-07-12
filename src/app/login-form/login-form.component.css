@@ -1,0 +1,19 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .myform-align{
+    padding-left:5em;
+    padding-right:5em;
+    padding-bottom: 2em;
+    margin-top:2em;
+    border : 0.2em solid rgb(10, 10, 10) ;
+    border-radius: 2em;
+    background-image: url("/assets/bgimage.jpg");
+}

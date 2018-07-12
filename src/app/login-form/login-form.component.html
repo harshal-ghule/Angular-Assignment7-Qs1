@@ -1,0 +1,53 @@
+<div class="container myform-align">
+    
+   
+  <div class="container" style="text-align: center; padding-top:2em">
+
+    <h1>Login Form</h1> 
+ 
+  </div>
+  
+  <br>
+  
+ 
+      <form class="example-form form-group container" >
+
+          <mat-form-field class="example-full-width">
+            <input matInput #user
+            maxlength="256"
+            placeholder="User Name"
+            [(ngModel)]="UserName" 
+            name="username" >
+
+            <mat-hint align="start"><strong>Enter User Name</strong> </mat-hint>
+            <mat-hint align="end">{{user.value.length}} / 256</mat-hint>
+          </mat-form-field>
+
+          <br>
+          <br>
+
+          <mat-form-field class="example-full-width">
+              <input type="password"
+               matInput #password
+               maxlength="7" 
+               placeholder="Password"
+               [(ngModel)]="Password" 
+               name="password"
+               >
+              <mat-hint align="start"><strong>Enter Password</strong> </mat-hint>
+              <mat-hint align="end">{{password.value.length}} / 7</mat-hint>
+          </mat-form-field>
+
+          <br>
+          <br>
+
+          <div class="button-row">
+              <button mat-raised-button color="primary" (click)="sendData()">Submit</button>
+            </div>
+          
+        </form>
+          
+    
+
+  
+</div>
